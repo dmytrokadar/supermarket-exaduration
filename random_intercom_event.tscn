@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://0jsk0qlrnu4x"]
+
+[ext_resource type="Script" uid="uid://qswan45axctp" path="res://random_intercom_event.gd" id="1_g4kxj"]
+[ext_resource type="AudioStream" uid="uid://cano1qgfwmq5w" path="res://Assets/Music/SFX/fingerme.mp3" id="2_ao2ah"]
+
+[node name="Node3D" type="Node3D" unique_id=51587957]
+script = ExtResource("1_g4kxj")
+sounds = Array[AudioStream]([ExtResource("2_ao2ah")])
+min_minutes = 2.0
+max_minutes = 6.0
+
+[node name="Timer" type="Timer" parent="." unique_id=444490846]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1394031809]

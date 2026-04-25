@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://b7f7jkmk5uyqj"]
+
+[ext_resource type="Script" uid="uid://dqkdw6v4wxybd" path="res://Scenes/product.gd" id="1_pyccx"]
+[ext_resource type="Texture2D" uid="uid://df0chcfqlyvm" path="res://Assets/IMG/salt.png" id="2_c01ro"]
+
+[node name="Area3D" type="Area3D" unique_id=306675987]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.25744897, 0, 0, 0)
+script = ExtResource("1_pyccx")
+item_texture = ExtResource("2_c01ro")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1681978879]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1)
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=958983599]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.492162, 4.552749, 1)
+texture = ExtResource("2_c01ro")

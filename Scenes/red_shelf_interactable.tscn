@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dnqjync05np8p"]
+
+[node name="product-proto" type="Node3D" unique_id=1225357829 groups=["Interactable"]]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1356412379]
+
+[node name="Sprite3D" type="Sprite3D" parent="StaticBody3D" unique_id=448839764]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.7081776, 1.1299988)
