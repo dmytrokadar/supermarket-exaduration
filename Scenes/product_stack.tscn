@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dnhsgc86bnwoa"]
+
+[ext_resource type="Script" uid="uid://dlvf4g0s182ch" path="res://Scenes/product_stack.gd" id="1_bj2xc"]
+[ext_resource type="PackedScene" uid="uid://dtm4nq0e1vt2l" path="res://Scenes/product_on_cart.tscn" id="2_v2v2l"]
+
+[node name="ProductStack" type="Node3D" unique_id=132370568]
+script = ExtResource("1_bj2xc")
+product_on_cart_prefab = ExtResource("2_v2v2l")
