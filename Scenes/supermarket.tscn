@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://rdhc64gaccvb"]
+
+[ext_resource type="PackedScene" uid="uid://c5ilpw40yvyvw" path="res://Assets/player.tscn" id="1_lhf1g"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v4j6i"]
+albedo_color = Color(1, 0.16862746, 1, 1)
+
+[node name="Supermarket" type="Node3D" unique_id=1626774070]
+
+[node name="Player" parent="." unique_id=1739713839 instance=ExtResource("1_lhf1g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4570453, 6.556471, -1.2591763)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=647759105]
+transform = Transform3D(9.12, 0, 0, 0, 9.12, 0, 0, 0, 9.12, 0, 0, 0)
+use_collision = true
+size = Vector3(6.6262207, 1, 7.0914307)
+material = SubResource("StandardMaterial3D_v4j6i")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1910945604]
