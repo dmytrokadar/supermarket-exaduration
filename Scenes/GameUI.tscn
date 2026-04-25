@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://cvpru3ngkssy"]
+
+[ext_resource type="PackedScene" uid="uid://bcouumbhbcfna" path="res://Scenes/TimerLabelScene.tscn" id="1_tyage"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_em2hx"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tyage"]
+texture = SubResource("CanvasTexture_em2hx")
+modulate_color = Color(0, 0, 0, 0.6666667)
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=576219168]
+
+[node name="Control" type="Control" parent="." unique_id=1769982387]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" parent="Control" unique_id=758262311 instance=ExtResource("1_tyage")]
+layout_mode = 1
+offset_bottom = 28.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_tyage")

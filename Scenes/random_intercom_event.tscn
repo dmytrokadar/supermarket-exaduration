@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://0jsk0qlrnu4x"]
 
-[ext_resource type="Script" uid="uid://qswan45axctp" path="res://random_intercom_event.gd" id="1_g4kxj"]
+[ext_resource type="Script" uid="uid://qswan45axctp" path="res://Scripts/random_intercom_event.gd" id="1_g4kxj"]
 [ext_resource type="AudioStream" uid="uid://cano1qgfwmq5w" path="res://Assets/Music/SFX/fingerme.mp3" id="2_ao2ah"]
 
 [node name="Node3D" type="Node3D" unique_id=51587957]
