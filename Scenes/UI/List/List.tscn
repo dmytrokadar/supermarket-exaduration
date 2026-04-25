@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://dlivfrswf8rvw"]
+
+[ext_resource type="Script" uid="uid://u7crt1hjwbi4" path="res://Scenes/UI/List/list.gd" id="1_fh1xb"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fh1xb"]
+load_path = "res://.godot/imported/tick.png-2240c4b261fae71c800e1913dab7b555.ctex"
+
+[sub_resource type="Theme" id="Theme_mee04"]
+
+[sub_resource type="CameraTexture" id="CameraTexture_7k1qd"]
+
+[node name="List" type="MarginContainer" unique_id=110769251]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fh1xb")
+tick_ = SubResource("CompressedTexture2D_fh1xb")
+
+[node name="ItemList" type="ItemList" parent="." unique_id=628040508]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 2
+theme = SubResource("Theme_mee04")
+select_mode = 2
+item_count = 4
+item_0/text = "sdasdasd"
+item_0/icon = SubResource("CameraTexture_7k1qd")
+item_1/text = "eqweqweq"
+item_2/text = "qweq"
+item_3/text = "qweqwe"
+
+[connection signal="multi_selected" from="ItemList" to="." method="_on_item_list_multi_selected"]
