@@ -1,16 +1,19 @@
-[gd_scene format=4 uid="uid://bqinl21edxftj"]
+[gd_scene format=4 uid="uid://dt8c37c74xgpp"]
 
 [ext_resource type="Texture2D" uid="uid://ddaf6v45wddc" path="res://Assets/supermarket/mesh/textures/interior_tiles_diff_1k.jpg" id="1_0xm2m"]
 [ext_resource type="Texture2D" uid="uid://hwtw053tixco" path="res://Assets/supermarket/mesh/wall/textures/beige_wall_001_rough_1k.jpg" id="2_0xm2m"]
 [ext_resource type="Texture2D" uid="uid://clcvvt3shvo5r" path="res://Assets/supermarket/materials/akce.jpg" id="3_6bp64"]
 [ext_resource type="PackedScene" uid="uid://c5ilpw40yvyvw" path="res://Assets/player.tscn" id="3_8gbba"]
-[ext_resource type="PackedScene" uid="uid://dwfo5r2fjwkrs" path="res://Scenes/rack.tscn" id="3_jjvhh"]
-[ext_resource type="PackedScene" uid="uid://bpahkyv1aaamd" path="res://Scenes/column.tscn" id="4_kry3j"]
+[ext_resource type="PackedScene" path="res://Scenes/rack.tscn" id="3_jjvhh"]
+[ext_resource type="PackedScene" path="res://Scenes/column.tscn" id="4_kry3j"]
 [ext_resource type="PackedScene" uid="uid://c2ru8d6vxwc2p" path="res://Assets/supermarket/mesh/light/scene.gltf" id="5_21xkr"]
 [ext_resource type="Texture2D" uid="uid://bgyvbshqbx4on" path="res://Assets/supermarket/materials/pivo.jpg" id="5_ynf5e"]
 [ext_resource type="PackedScene" uid="uid://c1w86i40jrfwc" path="res://Assets/supermarket/mesh/arrow/scene.gltf" id="6_21xkr"]
 [ext_resource type="PackedScene" uid="uid://btsow3eu67c2b" path="res://Assets/supermarket/mesh/caution/scene.gltf" id="7_6bp64"]
 [ext_resource type="PackedScene" uid="uid://dwo1q6uwn4cvc" path="res://Assets/supermarket/mesh/tree/scene.gltf" id="11_d1ilt"]
+[ext_resource type="Environment" uid="uid://c2r1ycyyotq0r" path="res://Assets/new_environment.tres" id="12_6iyac"]
+[ext_resource type="PackedScene" uid="uid://ct8kjroryoylh" path="res://Scenes/product.tscn" id="13_jkdf5"]
+[ext_resource type="Texture2D" uid="uid://8vmpimmlnm1d" path="res://Assets/IMG/water.png" id="14_jkdf5"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6iyac"]
 size = Vector3(3.9399414, 6.619873, 3.5297852)
@@ -483,10 +486,6 @@ material = SubResource("StandardMaterial3D_21xkr")
 [node name="Sketchfab_Scene" parent="." unique_id=2002934786 instance=ExtResource("6_21xkr")]
 transform = Transform3D(9.553428e-15, 2.1855695e-07, 5.0000005, 5.0000005, -2.1855695e-07, 0, 2.1855696e-07, 5, -2.1855696e-07, 18.736769, 7.6153946, -82.59)
 
-[node name="Camera3D" type="Camera3D" parent="." unique_id=1286062790]
-transform = Transform3D(-0.4663866, 0, -0.884581, 0, 1, 0, 0.884581, 0, -0.4663866, 0, 2.8953142, 0)
-current = true
-
 [node name="Floor" type="StaticBody3D" parent="." unique_id=87762866]
 
 [node name="CollisionShape3D3" type="CollisionShape3D" parent="Floor" unique_id=1153692253]
@@ -640,7 +639,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53.53683, 0, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -79.540245, 0, 0)
 
 [node name="Player" parent="." unique_id=1739713839 instance=ExtResource("3_8gbba")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.9432, 0.80221987, -73.84059)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -50.9432, 0.80221987, -73.84059)
 
 [node name="Rack5" parent="." unique_id=2014978524 instance=ExtResource("3_jjvhh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -54.083313)
@@ -734,3 +733,10 @@ transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 10, -22.220547, 9.773921, -44.3
 
 [node name="FAB converted12" parent="Roof" unique_id=1389872271 instance=ExtResource("5_21xkr")]
 transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 10, -49.98871, 9.773921, -44.356728)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1695229081]
+environment = ExtResource("12_6iyac")
+
+[node name="Area3D" parent="." unique_id=306675987 instance=ExtResource("13_jkdf5")]
+transform = Transform3D(3.019916e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, 3.019916e-08, -39, 0, -51.96331)
+item_texture = ExtResource("14_jkdf5")

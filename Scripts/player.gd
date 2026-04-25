@@ -40,3 +40,4 @@ func _physics_process(delta):
 		else:
 			is_mouse_visible = true
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+			

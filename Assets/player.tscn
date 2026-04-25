@@ -85,5 +85,5 @@ transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0, 0
 mesh = SubResource("CylinderMesh_tpd1a")
 
 [node name="Head" type="Camera3D" parent="." unique_id=755363507]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.461, 5.13)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 2.13)
 current = true

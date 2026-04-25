@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 
 GameProductsData="*uid://bks25ulvwex3l"
 
+[global_group]
+
+player=""
+
 [input]
 
 forward={

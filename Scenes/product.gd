@@ -42,3 +42,7 @@ func interact():
 	if not Engine.is_editor_hint(): # Перевіряємо, що ми НЕ в редакторі
 		print("Взаємодія: взято '", item_name, "'")
 		# return item_name # Повертаємо назву гравцеві, якщо треба
+
+
+func _on_body_entered(body: Node3D) -> void:
+	print(body.get_groups())
