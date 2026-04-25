@@ -1,0 +1,205 @@
+[gd_scene format=3 uid="uid://bpahkyv1aaamd"]
+
+[ext_resource type="Texture2D" uid="uid://b6vxh4q0kl11g" path="res://Assets/supermarket/mesh/column/textures/plastered_wall_05_diff_1k.jpg" id="1_nmhdn"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kry3j"]
+albedo_texture = ExtResource("1_nmhdn")
+
+[sub_resource type="BoxMesh" id="BoxMesh_0xm2m"]
+material = SubResource("StandardMaterial3D_kry3j")
+
+[node name="Column" type="Node3D" unique_id=900749227]
+
+[node name="Column" type="StaticBody3D" parent="." unique_id=1288304700]
+
+[node name="column" type="MeshInstance3D" parent="Column" unique_id=147142537]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, 25.371286, 4.835004, 28.144264)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column2" type="MeshInstance3D" parent="Column" unique_id=1716503302]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, 25.371286, 4.835004, 13.95661)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column3" type="MeshInstance3D" parent="Column" unique_id=1228562484]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, 16.412117, 4.835, 13.957)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column4" type="MeshInstance3D" parent="Column" unique_id=1836073802]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, 16.412117, 4.835, 28.144)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column5" type="MeshInstance3D" parent="Column" unique_id=1169732740]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, 25.371286, 4.835004, -0.22549057)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column8" type="MeshInstance3D" parent="Column" unique_id=1988195568]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, 16.412117, 4.835, -0.22575569)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column6" type="MeshInstance3D" parent="Column" unique_id=207278432]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, 25.371286, 4.835004, -26.014717)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column7" type="MeshInstance3D" parent="Column" unique_id=274604741]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, 25.371286, 4.835004, -40.20237)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column10" type="MeshInstance3D" parent="Column" unique_id=2015626611]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, 16.412117, 4.835, -26.014982)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column12" type="MeshInstance3D" parent="Column" unique_id=131097562]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, 16.412117, 4.835, -54.13318)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column15" type="MeshInstance3D" parent="Column" unique_id=25749236]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, 16.412117, 4.835, -40.20198)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column17" type="MeshInstance3D" parent="Column" unique_id=1151707015]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, 25.371286, 4.835004, -54.13292)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column19" type="MeshInstance3D" parent="Column" unique_id=615856695]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, -0.67905045, 4.835004, 28.144264)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column20" type="MeshInstance3D" parent="Column" unique_id=696267938]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, -0.67905045, 4.835004, 13.95661)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column21" type="MeshInstance3D" parent="Column" unique_id=58599971]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, -9.63822, 4.835, 13.957)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column22" type="MeshInstance3D" parent="Column" unique_id=1350560946]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, -9.63822, 4.835, 28.144)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column23" type="MeshInstance3D" parent="Column" unique_id=1835289564]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, -0.67905045, 4.835004, -0.22549057)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column24" type="MeshInstance3D" parent="Column" unique_id=1648273595]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, -9.63822, 4.835, -0.22575569)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column25" type="MeshInstance3D" parent="Column" unique_id=1806118395]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, -0.67905045, 4.835004, -26.014717)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column26" type="MeshInstance3D" parent="Column" unique_id=1583997907]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, -0.67905045, 4.835004, -40.20237)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column27" type="MeshInstance3D" parent="Column" unique_id=102626793]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, -9.63822, 4.835, -40.20198)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column28" type="MeshInstance3D" parent="Column" unique_id=1593928684]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, -9.63822, 4.835, -26.014982)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column29" type="MeshInstance3D" parent="Column" unique_id=1666249168]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, -0.67905045, 4.835004, -54.13292)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column30" type="MeshInstance3D" parent="Column" unique_id=1212573313]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, -9.63822, 4.835, -54.13318)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column9" type="MeshInstance3D" parent="Column" unique_id=1023261410]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, -28.173117, 4.835004, 28.144264)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column11" type="MeshInstance3D" parent="Column" unique_id=408426014]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, -28.173117, 4.835004, 13.95661)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column13" type="MeshInstance3D" parent="Column" unique_id=1306522458]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, -37.132286, 4.835, 13.957)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column14" type="MeshInstance3D" parent="Column" unique_id=2043829813]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, -37.132286, 4.835, 28.144)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column16" type="MeshInstance3D" parent="Column" unique_id=959700050]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, -28.173117, 4.835004, -0.22549057)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column18" type="MeshInstance3D" parent="Column" unique_id=1507423846]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, -37.132286, 4.835, -0.22575569)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column31" type="MeshInstance3D" parent="Column" unique_id=1928979685]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, -28.173117, 4.835004, -26.014717)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column32" type="MeshInstance3D" parent="Column" unique_id=1085331114]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, -28.173117, 4.835004, -40.20237)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column33" type="MeshInstance3D" parent="Column" unique_id=1930926832]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, -37.132286, 4.835, -26.014982)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column34" type="MeshInstance3D" parent="Column" unique_id=327954268]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, -37.132286, 4.835, -54.13318)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column35" type="MeshInstance3D" parent="Column" unique_id=2039922023]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, -37.132286, 4.835, -40.20198)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column36" type="MeshInstance3D" parent="Column" unique_id=561399725]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, -28.173117, 4.835004, -54.13292)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column37" type="MeshInstance3D" parent="Column" unique_id=674861839]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, -54.223454, 4.835004, 28.144264)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column38" type="MeshInstance3D" parent="Column" unique_id=92562396]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, -54.223454, 4.835004, 13.95661)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column39" type="MeshInstance3D" parent="Column" unique_id=1414846203]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, -63.182625, 4.835, 13.957)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column40" type="MeshInstance3D" parent="Column" unique_id=1656460896]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, -63.182625, 4.835, 28.144)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column41" type="MeshInstance3D" parent="Column" unique_id=1388352268]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, -54.223454, 4.835004, -0.22549057)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column42" type="MeshInstance3D" parent="Column" unique_id=1188898488]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, -63.182625, 4.835, -0.22575569)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column43" type="MeshInstance3D" parent="Column" unique_id=1270168124]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, -54.223454, 4.835004, -26.014717)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column44" type="MeshInstance3D" parent="Column" unique_id=962439943]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, -54.223454, 4.835004, -40.20237)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column45" type="MeshInstance3D" parent="Column" unique_id=1208772223]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, -63.182625, 4.835, -40.20198)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column46" type="MeshInstance3D" parent="Column" unique_id=1210242985]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, -63.182625, 4.835, -26.014982)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column47" type="MeshInstance3D" parent="Column" unique_id=255935878]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, -54.223454, 4.835004, -54.13292)
+mesh = SubResource("BoxMesh_0xm2m")
+
+[node name="column48" type="MeshInstance3D" parent="Column" unique_id=1852942633]
+transform = Transform3D(2, 0, 0, 0, 10, 0, 0, 0, 2, -63.182625, 4.835, -54.13318)
+mesh = SubResource("BoxMesh_0xm2m")
