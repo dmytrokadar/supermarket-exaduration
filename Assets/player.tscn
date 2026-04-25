@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://c5ilpw40yvyvw"]
 
 [ext_resource type="Script" uid="uid://h5on7k2877n3" path="res://Scripts/player.gd" id="1_tpd1a"]
+[ext_resource type="PackedScene" uid="uid://dnhsgc86bnwoa" path="res://Scenes/product_stack.tscn" id="2_chitn"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_tpd1a"]
 
@@ -88,7 +89,9 @@ mesh = SubResource("CylinderMesh_tpd1a")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 2.13)
 current = true
 
-[node name="InteractRay" type="RayCast3D" parent="Head"]
+[node name="InteractRay" type="RayCast3D" parent="Head" unique_id=1109198801]
 target_position = Vector3(0, 0, -7)
 collision_mask = 2
-enabled = true
+
+[node name="ProductStack" parent="." unique_id=132370568 instance=ExtResource("2_chitn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)

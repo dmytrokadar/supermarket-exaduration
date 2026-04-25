@@ -2,7 +2,6 @@
 
 [ext_resource type="PackedScene" uid="uid://c5ilpw40yvyvw" path="res://Assets/player.tscn" id="1_lhf1g"]
 [ext_resource type="Environment" uid="uid://c2r1ycyyotq0r" path="res://Assets/new_environment.tres" id="2_ubsb6"]
-[ext_resource type="PackedScene" uid="uid://dnhsgc86bnwoa" path="res://Scenes/product_stack.tscn" id="3_p5xn0"]
 [ext_resource type="PackedScene" uid="uid://dtm4nq0e1vt2l" path="res://Scenes/product_on_cart.tscn" id="4_vjlop"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v4j6i"]
@@ -21,9 +20,6 @@ material = SubResource("StandardMaterial3D_v4j6i")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1235400722]
 environment = ExtResource("2_ubsb6")
-
-[node name="ProductStack" parent="." unique_id=132370568 instance=ExtResource("3_p5xn0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9239886, 6.1095753, 0)
 
 [node name="ProductOnCart" parent="." unique_id=885242537 instance=ExtResource("4_vjlop")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2543335, 6.622233, 0.25482178)
