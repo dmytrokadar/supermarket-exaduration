@@ -4,11 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dtquw74axumlw"
-valid=false
+path="res://.godot/imported/retail_store_pack1.blend-88d59ad7891ccf6adf3a8058a5e19eed.scn"
 
 [deps]
 
 source_file="res://Assets/supermarket/mesh/retail_store_pack1.blend"
+dest_files=["res://.godot/imported/retail_store_pack1.blend-88d59ad7891ccf6adf3a8058a5e19eed.scn"]
 
 [params]
 
