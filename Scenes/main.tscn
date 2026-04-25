@@ -13,7 +13,8 @@
 [ext_resource type="PackedScene" uid="uid://dwo1q6uwn4cvc" path="res://Assets/supermarket/mesh/tree/scene.gltf" id="11_d1ilt"]
 [ext_resource type="Environment" uid="uid://c2r1ycyyotq0r" path="res://Assets/new_environment.tres" id="12_6iyac"]
 [ext_resource type="PackedScene" uid="uid://ct8kjroryoylh" path="res://Scenes/product.tscn" id="13_jkdf5"]
-[ext_resource type="PackedScene" uid="uid://0jsk0qlrnu4x" path="res://random_intercom_event.tscn" id="14_jkdf5"]
+[ext_resource type="PackedScene" uid="uid://0jsk0qlrnu4x" path="res://Scenes/random_intercom_event.tscn" id="14_jkdf5"]
+[ext_resource type="PackedScene" uid="uid://cvpru3ngkssy" path="res://Scenes/GameUI.tscn" id="15_wsu2k"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6iyac"]
 size = Vector3(3.9399414, 6.619873, 3.5297852)
@@ -743,3 +744,5 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -38.
 [node name="Node3D" parent="." unique_id=51587957 instance=ExtResource("14_jkdf5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.21748, 0.22470856, -64.96053)
 max_minutes = 5.0
+
+[node name="CanvasLayer" parent="." unique_id=576219168 instance=ExtResource("15_wsu2k")]

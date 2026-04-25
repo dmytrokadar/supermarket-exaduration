@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://bcouumbhbcfna"]
+
+[ext_resource type="Script" uid="uid://dddfal6sc5vxk" path="res://timer_label_scene.gd" id="1_r2rvc"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_em2hx"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bdged"]
+texture = SubResource("CanvasTexture_em2hx")
+modulate_color = Color(0, 0, 0, 0.8235294)
+
+[node name="Label" type="Label" unique_id=758262311]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 23.0
+grow_horizontal = 2
+size_flags_horizontal = 2
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.9019608)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxTexture_bdged")
+text = "00:00:00:00"
+script = ExtResource("1_r2rvc")
