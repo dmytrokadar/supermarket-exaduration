@@ -14,7 +14,7 @@ albedo_color = Color(0, 0, 0, 1)
 material = SubResource("StandardMaterial3D_tpd1a")
 height = 0.3
 
-[node name="Player" type="VehicleBody3D" unique_id=1739713839]
+[node name="Player" type="VehicleBody3D" unique_id=1739713839 groups=["player"]]
 axis_lock_angular_x = true
 axis_lock_angular_z = true
 brake = 0.4

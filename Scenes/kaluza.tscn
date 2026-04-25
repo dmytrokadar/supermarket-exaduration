@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://b6x2xq7pj348x"]
+
+[ext_resource type="Script" uid="uid://0v4a7g6vkeju" path="res://Scenes/kaluza.gd" id="1_luudp"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_jkdf5"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_wsu2k"]
+
+[node name="Kaluza" type="MeshInstance3D" unique_id=1833944500]
+transform = Transform3D(0.7340737, 0, 0.6790698, 0, 0.9679887, 0, -0.6790698, 0, 0.7340737, 0, 0, 0)
+mesh = SubResource("CylinderMesh_jkdf5")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1172615376]
+script = ExtResource("1_luudp")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1973830315]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.49443278, 0)
+shape = SubResource("CylinderShape3D_wsu2k")
+
+[connection signal="body_entered" from="Area3D" to="Area3D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area3D" to="Area3D" method="_on_body_exited"]
