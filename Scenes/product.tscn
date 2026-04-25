@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://b7f7jkmk5uyqj"]
+
+[node name="Area3D" type="Area3D" unique_id=306675987]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.25744897, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1681978879]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1)
+
+[node name="Sprite3D" type="Sprite3D" parent="CollisionShape3D" unique_id=958983599]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0129652, -1.0064296, 0)
