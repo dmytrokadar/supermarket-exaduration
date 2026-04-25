@@ -1,18 +1,18 @@
-[gd_scene format=4 uid="uid://dt8c37c74xgpp"]
+[gd_scene format=4 uid="uid://bqinl21edxftj"]
 
 [ext_resource type="Texture2D" uid="uid://ddaf6v45wddc" path="res://Assets/supermarket/mesh/textures/interior_tiles_diff_1k.jpg" id="1_0xm2m"]
 [ext_resource type="Texture2D" uid="uid://hwtw053tixco" path="res://Assets/supermarket/mesh/wall/textures/beige_wall_001_rough_1k.jpg" id="2_0xm2m"]
 [ext_resource type="Texture2D" uid="uid://clcvvt3shvo5r" path="res://Assets/supermarket/materials/akce.jpg" id="3_6bp64"]
 [ext_resource type="PackedScene" uid="uid://c5ilpw40yvyvw" path="res://Assets/player.tscn" id="3_8gbba"]
-[ext_resource type="PackedScene" path="res://Scenes/rack.tscn" id="3_jjvhh"]
-[ext_resource type="PackedScene" path="res://Scenes/column.tscn" id="4_kry3j"]
+[ext_resource type="PackedScene" uid="uid://dwfo5r2fjwkrs" path="res://Scenes/rack.tscn" id="3_jjvhh"]
+[ext_resource type="PackedScene" uid="uid://bpahkyv1aaamd" path="res://Scenes/column.tscn" id="4_kry3j"]
 [ext_resource type="PackedScene" uid="uid://c2ru8d6vxwc2p" path="res://Assets/supermarket/mesh/light/scene.gltf" id="5_21xkr"]
 [ext_resource type="Texture2D" uid="uid://bgyvbshqbx4on" path="res://Assets/supermarket/materials/pivo.jpg" id="5_ynf5e"]
 [ext_resource type="PackedScene" uid="uid://c1w86i40jrfwc" path="res://Assets/supermarket/mesh/arrow/scene.gltf" id="6_21xkr"]
 [ext_resource type="PackedScene" uid="uid://btsow3eu67c2b" path="res://Assets/supermarket/mesh/caution/scene.gltf" id="7_6bp64"]
 [ext_resource type="PackedScene" uid="uid://dwo1q6uwn4cvc" path="res://Assets/supermarket/mesh/tree/scene.gltf" id="11_d1ilt"]
-[ext_resource type="Environment" uid="uid://c2r1ycyyotq0r" path="res://Assets/new_environment.tres" id="12_6iyac"]
-[ext_resource type="PackedScene" uid="uid://ct8kjroryoylh" path="res://Scenes/product.tscn" id="13_jkdf5"]
+[ext_resource type="Environment" path="res://Assets/new_environment.tres" id="12_6iyac"]
+[ext_resource type="PackedScene" path="res://Scenes/product.tscn" id="13_jkdf5"]
 [ext_resource type="Texture2D" uid="uid://8vmpimmlnm1d" path="res://Assets/IMG/water.png" id="14_jkdf5"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6iyac"]
@@ -694,7 +694,7 @@ visible = false
 transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 10, 21.194006, 9.773921, -12.6515465)
 
 [node name="roof" type="MeshInstance3D" parent="Roof" unique_id=373015257]
-transform = Transform3D(126.18777, 0, 0, 0, 0.5, 0, 0, 0, 144.17873, -15.583022, 10.054523, -27.738626)
+transform = Transform3D(126.18777, 0, 0, 0, 0.5, 0, 0, 0, 144.17873, -15.583022, 8.983446, -27.738626)
 mesh = SubResource("BoxMesh_jjvhh")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Roof" unique_id=857430415]

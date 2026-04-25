@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://lv1skrr1lg1m"]
+
+[ext_resource type="Script" uid="uid://brhfmbeukv6sp" path="res://Scenes/main_menu.gd" id="1_tt5f1"]
+
+[node name="MainMenu" type="Control" unique_id=1881320877]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tt5f1")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=2058148230]
+layout_mode = 0
+offset_right = 1153.0
+offset_bottom = 651.0
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer" unique_id=2083394373]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer" unique_id=1341765385]
+layout_mode = 2
+
+[node name="Play" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=1016923267]
+layout_mode = 2
+action_mode = 0
+text = "Play"
+
+[node name="HowToPlay" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=148928396]
+layout_mode = 2
+text = "How to play"
+
+[node name="Quit" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=1697979818]
+layout_mode = 2
+text = "Quit"
+
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/HowToPlay" to="." method="_on_howtoplay_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
