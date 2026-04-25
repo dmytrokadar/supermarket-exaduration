@@ -21,16 +21,18 @@ brake = 0.4
 script = ExtResource("1_tpd1a")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1200328197]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 3.5173874, 0, 0.45182967, 0)
+transform = Transform3D(-1, 0, -3.0749976e-07, 0, 1, 0, 8.742278e-08, 0, -3.5173874, 0, 0.45182967, 0)
 mesh = SubResource("BoxMesh_tpd1a")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1554329233]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.45182967, -0.010467529)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0.45182967, -0.010467529)
 shape = SubResource("BoxShape3D_vc4ur")
 
 [node name="VehicleWheel3D" type="VehicleWheel3D" parent="." unique_id=805692226]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 1, 0, 1)
+transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 1, 0, 1)
 brake = 0.4
+use_as_traction = true
+use_as_steering = true
 wheel_roll_influence = 0.5
 suspension_travel = 0.1
 suspension_stiffness = 200.0
@@ -42,8 +44,10 @@ transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0, 0
 mesh = SubResource("CylinderMesh_tpd1a")
 
 [node name="VehicleWheel3D2" type="VehicleWheel3D" parent="." unique_id=321294429]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -1, 0, 1)
+transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, -1, 0, 1)
 brake = 0.4
+use_as_traction = true
+use_as_steering = true
 wheel_roll_influence = 0.5
 suspension_travel = 0.1
 suspension_stiffness = 200.0
@@ -55,10 +59,8 @@ transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0, 0
 mesh = SubResource("CylinderMesh_tpd1a")
 
 [node name="VehicleWheel3D3" type="VehicleWheel3D" parent="." unique_id=2138158208]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 1, 0, -1)
+transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 1, 0, -1)
 brake = 0.4
-use_as_traction = true
-use_as_steering = true
 wheel_roll_influence = 0.5
 suspension_travel = 0.1
 suspension_stiffness = 200.0
@@ -70,10 +72,8 @@ transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0, 0
 mesh = SubResource("CylinderMesh_tpd1a")
 
 [node name="VehicleWheel3D4" type="VehicleWheel3D" parent="." unique_id=2139117232]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -1, 0, -1)
+transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, -1, 0, -1)
 brake = 0.4
-use_as_traction = true
-use_as_steering = true
 wheel_roll_influence = 0.5
 suspension_travel = 0.1
 suspension_stiffness = 200.0
@@ -84,6 +84,6 @@ damping_relaxation = 5.0
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0, 0, 0)
 mesh = SubResource("CylinderMesh_tpd1a")
 
-[node name="Camera3D" type="Camera3D" parent="." unique_id=755363507]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 2.9146784e-07, 2.4613373, -5.130166)
+[node name="Head" type="Camera3D" parent="." unique_id=755363507]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.461, 5.13)
 current = true
