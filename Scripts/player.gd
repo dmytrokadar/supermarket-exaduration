@@ -4,5 +4,5 @@ extends VehicleBody3D
 @export var ENGINE_POWER = 300
 
 func _physics_process(delta):
-    steering = move_toward(steering, Input.get_axis("right", "left") * MAX_STEER, delta * 10)
-    engine_force = Input. get_axis("forward", "backward") * ENGINE_POWER
+	steering = move_toward(steering, Input.get_axis("right", "left") * MAX_STEER, delta * 10)
+	engine_force = Input. get_axis("forward", "backward") * ENGINE_POWER

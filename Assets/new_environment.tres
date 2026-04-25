@@ -1,0 +1,8 @@
+[gd_resource type="Environment" format=3 uid="uid://c2r1ycyyotq0r"]
+
+[resource]
+background_mode = 1
+background_color = Color(1, 1, 1, 1)
+ssao_enabled = true
+sdfgi_enabled = true
+volumetric_fog_length = 500.0
