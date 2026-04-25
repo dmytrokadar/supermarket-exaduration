@@ -8,6 +8,7 @@ extends Area3D
 		_update_logic() # Викликаємо оновлення, коли картинка змінилася
 
 var item_name: String = ""
+var player_ref: Node3D = null
 
 # Використовуємо @onready, щоб знайти спрайт при старті гри
 @onready var sprite = $Sprite3D
@@ -43,6 +44,12 @@ func interact():
 		print("Взаємодія: взято '", item_name, "'")
 		# return item_name # Повертаємо назву гравцеві, якщо треба
 
-
+# Коли гравець заходить в зону продукту — зберігаємо посилання
 func _on_body_entered(body: Node3D) -> void:
-	print(body.get_groups())
+	if body.is_in_group("player"):
+		player_ref = body
+
+# Коли гравець виходить із зони — прибираємо посилання
+func _on_body_exited(body: Node3D) -> void:
+	if body.is_in_group("player"):
+		player_ref = null

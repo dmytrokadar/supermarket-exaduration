@@ -2,6 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://c5ilpw40yvyvw" path="res://Assets/player.tscn" id="1_lhf1g"]
 [ext_resource type="Environment" uid="uid://c2r1ycyyotq0r" path="res://Assets/new_environment.tres" id="2_ubsb6"]
+[ext_resource type="PackedScene" uid="uid://ambient_music_scene" path="res://Scenes/ambient_music.tscn" id="3_ambmu"]
+[ext_resource type="PackedScene" uid="uid://0jsk0qlrnu4x" path="res://random_intercom_event.tscn" id="4_intcm"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v4j6i"]
 albedo_color = Color(1, 0.16862746, 1, 1)
@@ -19,3 +21,8 @@ material = SubResource("StandardMaterial3D_v4j6i")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1235400722]
 environment = ExtResource("2_ubsb6")
+
+[node name="AmbientMusic" parent="." instance=ExtResource("3_ambmu")]
+
+[node name="RandomIntercom" parent="." instance=ExtResource("4_intcm")]
+

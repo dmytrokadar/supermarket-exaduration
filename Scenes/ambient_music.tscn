@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://ambient_music_scene"]
+
+[ext_resource type="Script" path="res://Scripts/ambient_music.gd" id="1_amb"]
+[ext_resource type="AudioStream" path="res://Assets/Music/Ambient/chill1.mp3" id="2_ch1"]
+[ext_resource type="AudioStream" path="res://Assets/Music/Ambient/chill2.mp3" id="3_ch2"]
+[ext_resource type="AudioStream" path="res://Assets/Music/Ambient/chill3.mp3" id="4_ch3"]
+[ext_resource type="AudioStream" path="res://Assets/Music/Ambient/chill4.mp3" id="5_ch4"]
+
+[node name="AmbientMusic" type="Node"]
+script = ExtResource("1_amb")
+tracks = Array[AudioStream]([ExtResource("2_ch1"), ExtResource("3_ch2"), ExtResource("4_ch3"), ExtResource("5_ch4")])
+volume_db = -10.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
