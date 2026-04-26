@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ListData" format=3 uid="uid://cf634rwg2tvt6"]
+
+[ext_resource type="Script" uid="uid://bw2xxadmgt1ve" path="res://Scripts/list_data.gd" id="1_vysm5"]
+
+[resource]
+script = ExtResource("1_vysm5")
+data = {
+"Bread": 6,
+"Eggs": 10,
+"Milk": 2,
+"Tomatoes": 5
+}
+uncomplete_items = null
+metadata/_custom_type_script = "uid://bw2xxadmgt1ve"
