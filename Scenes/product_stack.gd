@@ -11,7 +11,7 @@ extends Node3D
 @export var speed = .002
 @export var follow_speed: float = 15.0
 @export var MAX_SPEED = 20
-@export var MAX_SLIDE_DISTANCE: float = 0.35
+@export var MAX_SLIDE_DISTANCE: float = 1.0
 
 var rigid_player: RigidBody3D
 
@@ -31,6 +31,9 @@ func _process(_delta: float) -> void:
 
 func _physics_process(delta: float) -> void:
 	slide_stack(delta)
+	
+	if Input.is_physical_key_pressed(KEY_J):
+		delete_products(2)
 	
 
 func slide_stack(delta):
@@ -74,3 +77,12 @@ func spawn_product(prefab):
 	product_base_local_positions.append(inst.position)
 	
 	print("product_spawned", (inst.position))
+
+func delete_products(amount: int):
+	print("deleting")
+	for i in range(amount):
+		if product_list.size() < 3:
+			return
+		var p: Node3D = product_list.pop_back()
+		product_base_local_positions.pop_back()
+		p.queue_free()
