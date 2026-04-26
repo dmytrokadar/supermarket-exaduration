@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://lv1skrr1lg1m"]
 
 [ext_resource type="Script" uid="uid://brhfmbeukv6sp" path="res://Scenes/main_menu.gd" id="1_tt5f1"]
+[ext_resource type="Texture2D" uid="uid://c0eg40c7hq7jh" path="res://Assets/supermarket/materials/supermarket.png" id="2_853f1"]
 
 [node name="MainMenu" type="Control" unique_id=1881320877]
 layout_mode = 3
@@ -10,6 +11,11 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_tt5f1")
+
+[node name="Supermarket" type="Sprite2D" parent="." unique_id=1167961236]
+position = Vector2(576.50006, 324.00003)
+scale = Vector2(0.82071435, 0.646)
+texture = ExtResource("2_853f1")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=2058148230]
 layout_mode = 0

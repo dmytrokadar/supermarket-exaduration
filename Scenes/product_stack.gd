@@ -71,8 +71,8 @@ func spawn_product(prefab):
 	add_child(inst)
 	var box := inst as CSGBox3D
 	inst.position =\
-		Vector3(0, 0, 0) if product_list.is_empty() else product_list.back().position +\
-		 Vector3(0, box.size.y, 0)
+		Vector3(0, 0, 0) if product_list.is_empty() else Vector3(0, product_list.back().position.y +\
+		 box.size.y, 0)
 	product_list.append(inst)
 	product_base_local_positions.append(inst.position)
 	

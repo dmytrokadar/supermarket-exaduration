@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://c5fw4aigebn6"]
+
+[ext_resource type="Texture2D" uid="uid://df75n1w2r7jyr" path="res://Assets/supermarket/materials/good_ending.png" id="1_jaro0"]
+[ext_resource type="Script" uid="uid://bc3acdrtukmxm" path="res://Scenes/happy_end.gd" id="1_wrwv7"]
+
+[node name="HappyEnd" type="Control" unique_id=756152670]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wrwv7")
+
+[node name="GoodEnding" type="Sprite2D" parent="." unique_id=1779580981]
+position = Vector2(576.5, 322.99997)
+scale = Vector2(0.8164286, 0.64799994)
+texture = ExtResource("1_jaro0")
+
+[node name="Button" type="Button" parent="." unique_id=12879228]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 578.0
+offset_right = 1144.0
+offset_bottom = 637.0
+text = "QUIT
+"
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=86261395]
+layout_mode = 0
+offset_left = 10.0
+offset_right = 1143.0
+offset_bottom = 569.0
+
+[node name="Label" type="Label" parent="PanelContainer" unique_id=1863488310]
+layout_mode = 2
+text = "**SUCCESS**
+
+You did it.
+
+Against all odds, the impossible list is complete.
+
+The cart is barely holding together. Items are stacked to the sky. Nothing makes sense anymore…
+
+But somehow — you made it.
+
+You stand at the checkout, victorious.
+
+Exhausted. Confused. Changed forever.
+
+The cashier looks at you in silence.
+
+“Did you find everything?”
+
+…Yes.
+
+Yes, you did.
+"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_quit_pressed"]
