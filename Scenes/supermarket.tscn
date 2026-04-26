@@ -22,4 +22,4 @@ material = SubResource("StandardMaterial3D_v4j6i")
 environment = ExtResource("2_ubsb6")
 
 [node name="ProductOnCart" parent="." unique_id=885242537 instance=ExtResource("4_vjlop")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2543335, 6.622233, 0.25482178)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2543335, 8.484013, 0.25482178)

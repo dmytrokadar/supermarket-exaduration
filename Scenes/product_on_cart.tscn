@@ -1,5 +1,13 @@
 [gd_scene format=3 uid="uid://dtm4nq0e1vt2l"]
 
+[ext_resource type="Texture2D" uid="uid://chgy7gfxcch1m" path="res://Assets/supermarket/materials/kartonka.jpg" id="1_5bpbj"]
+[ext_resource type="Script" uid="uid://b2i7wkiedjw7g" path="res://Scenes/product_on_cart.gd" id="2_nde0r"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nde0r"]
+albedo_texture = ExtResource("1_5bpbj")
+
 [node name="ProductOnCart" type="CSGBox3D" unique_id=885242537]
+material_override = SubResource("StandardMaterial3D_nde0r")
 use_collision = true
 size = Vector3(0.491333, 0.095703125, 0.49035645)
+script = ExtResource("2_nde0r")
