@@ -8,6 +8,8 @@ signal item_updated(name: String, new_amount: int)
 @export_custom(PROPERTY_HINT_DICTIONARY_TYPE, "String;int") var data : Dictionary
 @export_storage var incomplete_items
 
+
+
 func add_random():
 	var not_empty: Array
 	
@@ -37,6 +39,7 @@ func add_item(name: String, amount: int = 1) -> bool:
 		printerr("Incorrect amount")
 		return false
 		
+	var nice_name = GameProductsData.get_nice_name(name)
 	item_amount -= amount
 	data.set(name, item_amount)
 	

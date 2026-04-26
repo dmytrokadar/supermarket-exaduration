@@ -18,12 +18,17 @@ var crosshair_dot: Label
 var interact_hint: Label
 var hint_panel: PanelContainer
 
+# Reference to the ProductList UI
+var product_list: Node = null
+
 func _ready() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	look_yaw = head.rotation.y
 	look_pitch = head.rotation.x
 	add_to_group("player")
 	_create_hud()
+	# Find the ProductList node in the scene tree
+	product_list = get_tree().root.find_child("ProductList", true, false)
 
 # Creates HUD with crosshair dot and interaction hint panel
 func _create_hud() -> void:
@@ -153,4 +158,6 @@ func add_to_cart(product_node: Node) -> void:
 	var product_name = product_node.item_name if product_node.has_method("interact") else "unknown"
 	var nice_name = GameProductsData.get_nice_name(product_name)
 	print("[Cart] Added: ", nice_name)
-	# TODO: Implement actual cart logic (inventory, UI update, etc.)
+	# Update the shopping list UI
+	if product_list and product_list.list_data:
+		product_list.list_data.add_item(product_name)

@@ -5,10 +5,24 @@
 [resource]
 script = ExtResource("1_vysm5")
 data = {
-"Bread": 6,
-"Eggs": 10,
-"Milk": 2,
-"Tomatoes": 5
+"banana": 3,
+"battery": 5,
+"bread": 2,
+"carrot": 3,
+"chicken": 1,
+"cola": 2,
+"egg": 10,
+"john-pork": 3,
+"milk": 2,
+"mozarella": 1,
+"pineapple": 0,
+"rice": 1,
+"salt": 5,
+"sugar": 3,
+"tea": 1,
+"toilet-paper": 2,
+"water": 1,
+"yogurt": 6
 }
-uncomplete_items = null
+incomplete_items = null
 metadata/_custom_type_script = "uid://bw2xxadmgt1ve"

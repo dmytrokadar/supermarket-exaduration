@@ -12,13 +12,18 @@ var index_map: Dictionary
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	item_list.add_theme_color_override("font_color", font_color)
-	pass # Replace with function body.
+	visible = false
+	set_data(preload("res://Assets/supermarket/items.tres"))
+	#set_data(preload("res://Assets/supermarket/items.tres"))
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
 	
 func _input(event: InputEvent):
+	if event.is_action_pressed("show_hide_list"):
+		visible = !visible
+	
 	if event.is_action_pressed("fill_list"):
 		set_data(preload("res://Assets/supermarket/items.tres"))
 		
@@ -39,7 +44,8 @@ func set_data(data: ListData):
 	list_data = data
 	
 	for item_name in list_data.data.keys():
-		var item_label: String = "%s: %s" % [item_name, list_data.data.get(item_name)]
+		var nice_name = GameProductsData.get_nice_name(item_name)
+		var item_label: String = "%s: %s" % [nice_name, list_data.data.get(item_name)]
 		var idx: int = item_list.add_item(item_label, empty_texture, false)
 		index_map.set(item_name, idx)
 		
@@ -49,7 +55,8 @@ func set_data(data: ListData):
 
 func _on_list_item_updated(name: String, amount: int):
 	var idx: int = index_map.get(name)
-	item_list.set_item_text(idx, "%s: %s" % [name, amount])
+	var nice_name = GameProductsData.get_nice_name(name)
+	item_list.set_item_text(idx, "%s: %s" % [nice_name, amount])
 	pass
 	
 func _on_list_item_completed(name: String):
