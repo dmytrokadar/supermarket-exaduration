@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://dt8c37c74xgpp"]
 
 [ext_resource type="Texture2D" uid="uid://ddaf6v45wddc" path="res://Assets/supermarket/mesh/textures/interior_tiles_diff_1k.jpg" id="1_0xm2m"]
-[ext_resource type="Script" path="res://Scenes/main.gd" id="1_wsu2k"]
+[ext_resource type="Script" uid="uid://donsnpcrp7yec" path="res://Scenes/main.gd" id="1_wsu2k"]
 [ext_resource type="Texture2D" uid="uid://hwtw053tixco" path="res://Assets/supermarket/mesh/wall/textures/beige_wall_001_rough_1k.jpg" id="2_0xm2m"]
 [ext_resource type="Texture2D" uid="uid://clcvvt3shvo5r" path="res://Assets/supermarket/materials/akce.jpg" id="3_6bp64"]
 [ext_resource type="PackedScene" uid="uid://c5ilpw40yvyvw" path="res://Assets/player.tscn" id="3_8gbba"]
