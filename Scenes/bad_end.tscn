@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://cay8ijskmxo2j"]
+
+[ext_resource type="Texture2D" uid="uid://b3ptu6cyee33p" path="res://Assets/supermarket/materials/bad_ending.png" id="1_euaqh"]
+[ext_resource type="Script" uid="uid://cyvyw8ggnyw5q" path="res://Scenes/bad_end.gd" id="1_pnrs6"]
+
+[node name="BadEnd" type="Control" unique_id=2036403770]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pnrs6")
+
+[node name="BadEnding" type="Sprite2D" parent="." unique_id=618639631]
+position = Vector2(575.5, 321.5)
+scale = Vector2(0.82071424, 0.645)
+texture = ExtResource("1_euaqh")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1782460535]
+layout_mode = 0
+offset_left = 12.0
+offset_right = 1141.0
+offset_bottom = 579.0
+
+[node name="Label" type="Label" parent="PanelContainer" unique_id=1147137350]
+layout_mode = 2
+text = "**FAILED**
+
+Everything is gone.
+
+One wrong turn. One bad hit.
+
+The cart flipped. Items scattered everywhere.
+
+Your perfect run — destroyed in seconds.
+
+The list is still not complete.
+
+And the store… it feels endless.
+
+Somewhere in the distance, another shelf falls.
+
+Maybe next time, you’ll make it.
+
+Maybe.
+"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=1099354819]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 585.0
+offset_right = 1140.0
+offset_bottom = 642.0
+text = "QUIT"
+
+[connection signal="pressed" from="Button" to="." method="_on_quit_pressed"]

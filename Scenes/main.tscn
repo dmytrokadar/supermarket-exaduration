@@ -19,6 +19,33 @@
 [ext_resource type="PackedScene" uid="uid://b6x2xq7pj348x" path="res://Scenes/kaluza.tscn" id="16_k12tt"]
 [ext_resource type="Texture2D" uid="uid://crgiy66gje5ut" path="res://Assets/supermarket/materials/voda.jpg" id="17_h1bgf"]
 [ext_resource type="PackedScene" uid="uid://t2vmr28kyht" path="res://Assets/supermarket/mesh/traffic_barrier.glb" id="18_b3802"]
+[ext_resource type="Texture2D" uid="uid://e1qhmvdp7v8k" path="res://Assets/IMG/apple.png" id="20_hibaj"]
+[ext_resource type="Texture2D" uid="uid://bmi4glfgwkitm" path="res://Assets/IMG/bread.png" id="21_nwwfm"]
+[ext_resource type="Texture2D" uid="uid://ds7fv5fh7yvgj" path="res://Assets/IMG/butter.png" id="22_s8vy0"]
+[ext_resource type="Texture2D" uid="uid://bvls7edgxj3a8" path="res://Assets/IMG/pasta.png" id="23_jut3y"]
+[ext_resource type="Texture2D" uid="uid://b24fqlyer15ay" path="res://Assets/IMG/pineapple.png" id="24_v2nl5"]
+[ext_resource type="Texture2D" uid="uid://dqy423jgy1846" path="res://Assets/IMG/milk.png" id="25_dmskm"]
+[ext_resource type="Texture2D" uid="uid://cwhr6pcfklo5d" path="res://Assets/IMG/mozarella.png" id="26_xdkp6"]
+[ext_resource type="Texture2D" uid="uid://c7hx8invugfx0" path="res://Assets/IMG/pizza.png" id="27_54nrm"]
+[ext_resource type="Texture2D" uid="uid://d2f3rltiel2ng" path="res://Assets/IMG/popcorn.png" id="28_55jeb"]
+[ext_resource type="Texture2D" uid="uid://c5mxaybb270hw" path="res://Assets/IMG/potato.png" id="29_gsvbx"]
+[ext_resource type="Texture2D" uid="uid://crfdhnfyjkp3r" path="res://Assets/IMG/rice.png" id="30_bv80c"]
+[ext_resource type="Texture2D" uid="uid://d12d5fwourrgo" path="res://Assets/IMG/spaghetti.png" id="31_ptfg5"]
+[ext_resource type="Texture2D" uid="uid://cnkq0rbre6n1j" path="res://Assets/IMG/sugar.png" id="32_2daye"]
+[ext_resource type="Texture2D" uid="uid://cn5ut6j7px3pq" path="res://Assets/IMG/tea.png" id="33_1semv"]
+[ext_resource type="Texture2D" uid="uid://b6daai21su3jm" path="res://Assets/IMG/carrot.png" id="34_2060n"]
+[ext_resource type="Texture2D" uid="uid://cn0v2724y2yvn" path="res://Assets/IMG/chicken.png" id="35_6ml46"]
+[ext_resource type="Texture2D" uid="uid://cg23q25f2rpt6" path="res://Assets/IMG/coffee.png" id="36_qax2n"]
+[ext_resource type="Texture2D" uid="uid://ccqwabrecni4v" path="res://Assets/IMG/cola.png" id="37_y86h7"]
+[ext_resource type="Texture2D" uid="uid://c8vgsjqkptt7t" path="res://Assets/IMG/john-pork.png" id="38_my4ki"]
+[ext_resource type="Texture2D" uid="uid://cwtgbaknhc8yq" path="res://Assets/IMG/meat.png" id="39_lx3vj"]
+[ext_resource type="Texture2D" uid="uid://82y7gs6ylm8b" path="res://Assets/IMG/cucumber.png" id="40_ynmfv"]
+[ext_resource type="Texture2D" uid="uid://l3pgml3ujdi6" path="res://Assets/IMG/egg.png" id="41_cblf0"]
+[ext_resource type="Texture2D" uid="uid://8iuc4b2ci8hw" path="res://Assets/IMG/tomato.png" id="42_nay3j"]
+[ext_resource type="Texture2D" uid="uid://btcbbr6g0r1pq" path="res://Assets/IMG/toilet-paper.png" id="43_ovafv"]
+[ext_resource type="Texture2D" uid="uid://byb5atwvcusge" path="res://Assets/IMG/yogurt.png" id="44_owhal"]
+[ext_resource type="Texture2D" uid="uid://ds72o6skcf1im" path="res://Assets/IMG/banana.png" id="45_uv6w5"]
+[ext_resource type="Texture2D" uid="uid://crfrixktbx80d" path="res://Assets/IMG/battery.png" id="46_r7bbj"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6iyac"]
 size = Vector3(3.9399414, 6.619873, 3.5297852)
@@ -900,3 +927,142 @@ transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, -5.2862687, -0.06559783, -
 
 [node name="Sketchfab_Scene5" parent="." unique_id=369767213 instance=ExtResource("18_b3802")]
 transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, -58.792633, -0.065597355, -26.297264)
+
+[node name="Area3D2" parent="." unique_id=1024291168 instance=ExtResource("13_jkdf5")]
+transform = Transform3D(3.019916e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, 3.019916e-08, -39, 0, -38.460514)
+item_texture = ExtResource("20_hibaj")
+
+[node name="Area3D3" parent="." unique_id=1697628652 instance=ExtResource("13_jkdf5")]
+transform = Transform3D(3.019916e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, 3.019916e-08, -29.937216, 0, -51.96331)
+item_texture = ExtResource("21_nwwfm")
+
+[node name="Area3D4" parent="." unique_id=1198556775 instance=ExtResource("13_jkdf5")]
+transform = Transform3D(3.019916e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, 3.019916e-08, -29.937216, 0, -36.7488)
+item_texture = ExtResource("22_s8vy0")
+
+[node name="Area3D5" parent="." unique_id=456229331 instance=ExtResource("13_jkdf5")]
+transform = Transform3D(3.019916e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, 3.019916e-08, -29.937216, 0, 5.0478516)
+item_texture = ExtResource("23_jut3y")
+
+[node name="Area3D6" parent="." unique_id=1211718139 instance=ExtResource("13_jkdf5")]
+transform = Transform3D(3.019916e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, 3.019916e-08, -29.937216, 0, 20.262363)
+item_texture = ExtResource("24_v2nl5")
+
+[node name="Area3D7" parent="." unique_id=135779450 instance=ExtResource("13_jkdf5")]
+transform = Transform3D(3.019916e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, 3.019916e-08, -38.749725, 0, 5.0478516)
+item_texture = ExtResource("25_dmskm")
+
+[node name="Area3D8" parent="." unique_id=1526050802 instance=ExtResource("13_jkdf5")]
+transform = Transform3D(3.019916e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, 3.019916e-08, -38.749725, 0, 20.262363)
+item_texture = ExtResource("26_xdkp6")
+
+[node name="Area3D9" parent="." unique_id=368471829 instance=ExtResource("13_jkdf5")]
+transform = Transform3D(3.019916e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, 3.019916e-08, -11.183418, 0, 5.0478516)
+item_texture = ExtResource("27_54nrm")
+
+[node name="Area3D10" parent="." unique_id=831691568 instance=ExtResource("13_jkdf5")]
+transform = Transform3D(3.019916e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, 3.019916e-08, -11.183418, 0, 20.262363)
+item_texture = ExtResource("28_55jeb")
+
+[node name="Area3D11" parent="." unique_id=573999316 instance=ExtResource("13_jkdf5")]
+transform = Transform3D(3.019916e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, 3.019916e-08, -2.0274968, 0, 5.0478516)
+item_texture = ExtResource("29_gsvbx")
+
+[node name="Area3D12" parent="." unique_id=1275102829 instance=ExtResource("13_jkdf5")]
+transform = Transform3D(3.019916e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, 3.019916e-08, -2.0274968, 0, 20.262363)
+item_texture = ExtResource("30_bv80c")
+
+[node name="Area3D13" parent="." unique_id=1327853085 instance=ExtResource("13_jkdf5")]
+transform = Transform3D(3.019916e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, 3.019916e-08, 14.800905, 0, 5.0478516)
+
+[node name="Area3D14" parent="." unique_id=1234520504 instance=ExtResource("13_jkdf5")]
+transform = Transform3D(3.019916e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, 3.019916e-08, 14.695175, 0, 20.262363)
+item_texture = ExtResource("31_ptfg5")
+
+[node name="Area3D15" parent="." unique_id=1860610028 instance=ExtResource("13_jkdf5")]
+transform = Transform3D(3.019916e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, 3.019916e-08, 23.784025, 0, 5.0478516)
+item_texture = ExtResource("32_2daye")
+
+[node name="Area3D16" parent="." unique_id=1312411629 instance=ExtResource("13_jkdf5")]
+transform = Transform3D(3.019916e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, 3.019916e-08, 23.784025, 0, 20.262363)
+item_texture = ExtResource("33_1semv")
+
+[node name="Area3D17" parent="." unique_id=332056907 instance=ExtResource("13_jkdf5")]
+transform = Transform3D(3.019916e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, 3.019916e-08, -11.006218, 0, -51.96331)
+item_texture = ExtResource("34_2060n")
+
+[node name="Area3D18" parent="." unique_id=672112479 instance=ExtResource("13_jkdf5")]
+transform = Transform3D(3.019916e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, 3.019916e-08, -11.006218, 0, -36.7488)
+item_texture = ExtResource("35_6ml46")
+
+[node name="Area3D19" parent="." unique_id=159364506 instance=ExtResource("13_jkdf5")]
+transform = Transform3D(3.019916e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, 3.019916e-08, 14.776585, 0, -51.96331)
+item_texture = ExtResource("36_qax2n")
+
+[node name="Area3D20" parent="." unique_id=919999093 instance=ExtResource("13_jkdf5")]
+transform = Transform3D(3.019916e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, 3.019916e-08, 14.776585, 0, -36.7488)
+item_texture = ExtResource("37_y86h7")
+
+[node name="Area3D21" parent="." unique_id=1592823359 instance=ExtResource("13_jkdf5")]
+transform = Transform3D(-1.7484556e-08, 0, 0.4, 0, 0.4, 0, -0.4, 0, -1.7484556e-08, 17.62852, 0, -45.82776)
+item_texture = ExtResource("38_my4ki")
+
+[node name="Area3D22" parent="." unique_id=2119901400 instance=ExtResource("13_jkdf5")]
+transform = Transform3D(-1.7484556e-08, 0, 0.4, 0, 0.4, 0, -0.4, 0, -1.7484556e-08, 17.62852, 0, -30.613247)
+item_texture = ExtResource("39_lx3vj")
+
+[node name="Area3D23" parent="." unique_id=288809214 instance=ExtResource("13_jkdf5")]
+transform = Transform3D(-1.7484556e-08, 0, 0.4, 0, 0.4, 0, -0.4, 0, -1.7484556e-08, 26.657125, 0, -45.82776)
+item_texture = ExtResource("40_ynmfv")
+
+[node name="Area3D24" parent="." unique_id=1806778139 instance=ExtResource("13_jkdf5")]
+transform = Transform3D(-1.7484556e-08, 0, 0.4, 0, 0.4, 0, -0.4, 0, -1.7484556e-08, 26.657125, 0, -30.613247)
+item_texture = ExtResource("41_cblf0")
+
+[node name="Area3D25" parent="." unique_id=82607229 instance=ExtResource("13_jkdf5")]
+transform = Transform3D(-1.7484556e-08, 0, 0.4, 0, 0.4, 0, -0.4, 0, -1.7484556e-08, 26.657125, 0, 8.406074)
+item_texture = ExtResource("42_nay3j")
+
+[node name="Area3D26" parent="." unique_id=125097105 instance=ExtResource("13_jkdf5")]
+transform = Transform3D(-1.7484556e-08, 0, 0.4, 0, 0.4, 0, -0.4, 0, -1.7484556e-08, 26.657125, 0, 23.620583)
+item_texture = ExtResource("43_ovafv")
+
+[node name="Area3D27" parent="." unique_id=428647952 instance=ExtResource("13_jkdf5")]
+transform = Transform3D(-1.7484556e-08, 0, 0.4, 0, 0.4, 0, -0.4, 0, -1.7484556e-08, 0.75652933, 0, 8.406074)
+item_texture = ExtResource("25_dmskm")
+
+[node name="Area3D28" parent="." unique_id=1067556392 instance=ExtResource("13_jkdf5")]
+transform = Transform3D(-1.7484556e-08, 0, 0.4, 0, 0.4, 0, -0.4, 0, -1.7484556e-08, 0.75652933, 0, 23.620583)
+item_texture = ExtResource("44_owhal")
+
+[node name="Area3D29" parent="." unique_id=1590774049 instance=ExtResource("13_jkdf5")]
+transform = Transform3D(-1.7484556e-08, 0, 0.4, 0, 0.4, 0, -0.4, 0, -1.7484556e-08, -26.877386, 0, 8.406074)
+item_texture = ExtResource("20_hibaj")
+
+[node name="Area3D30" parent="." unique_id=1723466079 instance=ExtResource("13_jkdf5")]
+transform = Transform3D(-1.7484556e-08, 0, 0.4, 0, 0.4, 0, -0.4, 0, -1.7484556e-08, -26.829855, 0.15175533, 23.385176)
+item_texture = ExtResource("14_jkdf5")
+
+[node name="Area3D31" parent="." unique_id=383909563 instance=ExtResource("13_jkdf5")]
+transform = Transform3D(-1.7484556e-08, 0, 0.4, 0, 0.4, 0, -0.4, 0, -1.7484556e-08, -52.900528, 0, 8.406074)
+item_texture = ExtResource("14_jkdf5")
+
+[node name="Area3D32" parent="." unique_id=1386822263 instance=ExtResource("13_jkdf5")]
+transform = Transform3D(-1.7484556e-08, 0, 0.4, 0, 0.4, 0, -0.4, 0, -1.7484556e-08, -52.900528, 0, 23.620583)
+item_texture = ExtResource("21_nwwfm")
+
+[node name="Area3D33" parent="." unique_id=528169550 instance=ExtResource("13_jkdf5")]
+transform = Transform3D(-1.7484556e-08, 0, 0.4, 0, 0.4, 0, -0.4, 0, -1.7484556e-08, -61.837223, 0, 8.406074)
+item_texture = ExtResource("37_y86h7")
+
+[node name="Area3D34" parent="." unique_id=754759584 instance=ExtResource("13_jkdf5")]
+transform = Transform3D(-1.7484556e-08, 0, 0.4, 0, 0.4, 0, -0.4, 0, -1.7484556e-08, -61.837223, 0, 23.620583)
+item_texture = ExtResource("45_uv6w5")
+
+[node name="Area3D35" parent="." unique_id=1740238769 instance=ExtResource("13_jkdf5")]
+transform = Transform3D(3.019916e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, 3.019916e-08, -55.627335, 0, -51.96331)
+item_texture = ExtResource("45_uv6w5")
+
+[node name="Area3D36" parent="." unique_id=1717542632 instance=ExtResource("13_jkdf5")]
+transform = Transform3D(3.019916e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, 3.019916e-08, -55.627335, 0, -38.460514)
+item_texture = ExtResource("46_r7bbj")
