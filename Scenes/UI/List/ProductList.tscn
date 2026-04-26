@@ -1,0 +1,91 @@
+[gd_scene format=3 uid="uid://dlivfrswf8rvw"]
+
+[ext_resource type="Script" uid="uid://u7crt1hjwbi4" path="res://Scenes/UI/List/ProductList.gd" id="1_se8gj"]
+[ext_resource type="Texture2D" uid="uid://dhrj3r47pdbcs" path="res://Assets/UI/clipboard.png" id="2_477bs"]
+
+[sub_resource type="SystemFont" id="SystemFont_se8gj"]
+
+[sub_resource type="FontVariation" id="FontVariation_477bs"]
+base_font = SubResource("SystemFont_se8gj")
+opentype_features = {
+1684959085: 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_se8gj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_se8gj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_477bs"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vxa5u"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5kw2j"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rlfhy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_eqjce"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sxilv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_01oe5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kvehn"]
+
+[node name="ProductList" type="AspectRatioContainer" unique_id=2076418968]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+ratio = 0.7717
+stretch_mode = 1
+script = ExtResource("1_se8gj")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2048229958]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("2_477bs")
+expand_mode = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1555316418]
+layout_mode = 2
+theme_override_constants/margin_left = 75
+theme_override_constants/margin_top = 170
+theme_override_constants/margin_right = 75
+theme_override_constants/margin_bottom = 95
+
+[node name="ItemList" type="ItemList" parent="MarginContainer" unique_id=628040508]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hovered_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hovered_selected_color = Color(3.5797245e-07, 0.26907006, 0, 1)
+theme_override_colors/font_selected_color = Color(3.5797245e-07, 0.26907006, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 0)
+theme_override_colors/scroll_hint_color = Color(0, 0, 0, 0)
+theme_override_constants/v_separation = 5
+theme_override_constants/line_separation = 0
+theme_override_constants/icon_margin = 10
+theme_override_fonts/font = SubResource("FontVariation_477bs")
+theme_override_icons/scroll_hint = SubResource("ImageTexture_se8gj")
+theme_override_styles/panel = SubResource("StyleBoxEmpty_se8gj")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_477bs")
+theme_override_styles/hovered = SubResource("StyleBoxEmpty_vxa5u")
+theme_override_styles/hovered_selected = SubResource("StyleBoxEmpty_5kw2j")
+theme_override_styles/hovered_selected_focus = SubResource("StyleBoxEmpty_rlfhy")
+theme_override_styles/selected = SubResource("StyleBoxEmpty_eqjce")
+theme_override_styles/selected_focus = SubResource("StyleBoxEmpty_sxilv")
+theme_override_styles/cursor_unfocused = SubResource("StyleBoxEmpty_01oe5")
+theme_override_styles/cursor = SubResource("StyleBoxEmpty_kvehn")
+select_mode = 2
+auto_height = true
+item_count = 2
+fixed_icon_size = Vector2i(32, 32)
+item_0/text = "sdasdasd"
+item_1/text = "dddddd"
+item_1/disabled = true
+
+[connection signal="multi_selected" from="MarginContainer/ItemList" to="." method="_on_item_list_multi_selected"]
