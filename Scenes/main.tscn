@@ -14,8 +14,8 @@
 [ext_resource type="PackedScene" uid="uid://dwo1q6uwn4cvc" path="res://Assets/supermarket/mesh/tree/scene.gltf" id="11_d1ilt"]
 [ext_resource type="Environment" uid="uid://c2r1ycyyotq0r" path="res://Assets/new_environment.tres" id="12_6iyac"]
 [ext_resource type="PackedScene" uid="uid://ct8kjroryoylh" path="res://Scenes/product.tscn" id="13_jkdf5"]
-[ext_resource type="PackedScene" path="res://Scenes/GameUI.tscn" id="15_wsu2k"]
-[ext_resource type="PackedScene" path="res://Scenes/kaluza.tscn" id="16_k12tt"]
+[ext_resource type="PackedScene" uid="uid://cvpru3ngkssy" path="res://Scenes/GameUI.tscn" id="15_wsu2k"]
+[ext_resource type="PackedScene" uid="uid://b6x2xq7pj348x" path="res://Scenes/kaluza.tscn" id="16_k12tt"]
 [ext_resource type="Texture2D" uid="uid://crgiy66gje5ut" path="res://Assets/supermarket/materials/voda.jpg" id="17_h1bgf"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6iyac"]
@@ -779,3 +779,5 @@ material_override = SubResource("StandardMaterial3D_b3802")
 [node name="Kaluza7" parent="." unique_id=1043994131 instance=ExtResource("16_k12tt")]
 transform = Transform3D(7.340737, 0, 6.790698, 0, 9.68, 0, -6.790698, 0, 7.340737, 33.60346, -9.66629, -9.161355)
 material_override = SubResource("StandardMaterial3D_b3802")
+
+[node name="CanvasLayer2" parent="." unique_id=1962299768 instance=ExtResource("15_wsu2k")]

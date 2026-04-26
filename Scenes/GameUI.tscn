@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://cvpru3ngkssy"]
 
+[ext_resource type="PackedScene" uid="uid://dlivfrswf8rvw" path="res://Scenes/UI/List/ProductList.tscn" id="1_37hul"]
 [ext_resource type="PackedScene" uid="uid://bcouumbhbcfna" path="res://Scenes/TimerLabelScene.tscn" id="1_tyage"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_em2hx"]
@@ -17,6 +18,18 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="ProductList" parent="Control" unique_id=2076418968 instance=ExtResource("1_37hul")]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_right = 0.0
+anchor_bottom = 0.5
+offset_left = 0.0
+offset_top = -179.5
+offset_right = 510.0
+offset_bottom = 179.5
+grow_horizontal = 1
 
 [node name="Label" parent="Control" unique_id=758262311 instance=ExtResource("1_tyage")]
 layout_mode = 1
