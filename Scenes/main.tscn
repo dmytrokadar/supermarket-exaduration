@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://dt8c37c74xgpp"]
 
 [ext_resource type="Texture2D" uid="uid://ddaf6v45wddc" path="res://Assets/supermarket/mesh/textures/interior_tiles_diff_1k.jpg" id="1_0xm2m"]
+[ext_resource type="Script" path="res://Scenes/main.gd" id="1_wsu2k"]
 [ext_resource type="Texture2D" uid="uid://hwtw053tixco" path="res://Assets/supermarket/mesh/wall/textures/beige_wall_001_rough_1k.jpg" id="2_0xm2m"]
 [ext_resource type="Texture2D" uid="uid://clcvvt3shvo5r" path="res://Assets/supermarket/materials/akce.jpg" id="3_6bp64"]
 [ext_resource type="PackedScene" uid="uid://c5ilpw40yvyvw" path="res://Assets/player.tscn" id="3_8gbba"]
@@ -13,8 +14,9 @@
 [ext_resource type="PackedScene" uid="uid://dwo1q6uwn4cvc" path="res://Assets/supermarket/mesh/tree/scene.gltf" id="11_d1ilt"]
 [ext_resource type="Environment" uid="uid://c2r1ycyyotq0r" path="res://Assets/new_environment.tres" id="12_6iyac"]
 [ext_resource type="PackedScene" uid="uid://ct8kjroryoylh" path="res://Scenes/product.tscn" id="13_jkdf5"]
-[ext_resource type="PackedScene" path="res://Scenes/random_intercom_event.tscn" id="14_jkdf5"]
 [ext_resource type="PackedScene" path="res://Scenes/GameUI.tscn" id="15_wsu2k"]
+[ext_resource type="PackedScene" path="res://Scenes/kaluza.tscn" id="16_k12tt"]
+[ext_resource type="Texture2D" uid="uid://crgiy66gje5ut" path="res://Assets/supermarket/materials/voda.jpg" id="17_h1bgf"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6iyac"]
 size = Vector3(3.9399414, 6.619873, 3.5297852)
@@ -482,7 +484,11 @@ material = SubResource("StandardMaterial3D_21xkr")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_21xkr"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b3802"]
+albedo_texture = ExtResource("17_h1bgf")
+
 [node name="Main" type="Node3D" unique_id=990420624]
+script = ExtResource("1_wsu2k")
 
 [node name="Sketchfab_Scene" parent="." unique_id=2002934786 instance=ExtResource("6_21xkr")]
 transform = Transform3D(9.553428e-15, 2.1855695e-07, 5.0000005, 5.0000005, -2.1855695e-07, 0, 2.1855696e-07, 5, -2.1855696e-07, 18.736769, 7.6153946, -82.59)
@@ -695,7 +701,7 @@ visible = false
 transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 10, 21.194006, 9.773921, -12.6515465)
 
 [node name="roof" type="MeshInstance3D" parent="Roof" unique_id=373015257]
-transform = Transform3D(126.18777, 0, 0, 0, 0.5, 0, 0, 0, 144.17873, -15.583022, 10.054523, -27.738626)
+transform = Transform3D(126.18777, 0, 0, 0, 0.5, 0, 0, 0, 144.17873, -15.583022, 8.983446, -27.738626)
 mesh = SubResource("BoxMesh_jjvhh")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Roof" unique_id=857430415]
@@ -741,8 +747,35 @@ environment = ExtResource("12_6iyac")
 [node name="Area3D" parent="." unique_id=306675987 instance=ExtResource("13_jkdf5")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -38.79866, 0.22470856, -51.09236)
 
-[node name="Node3D" parent="." unique_id=51587957 instance=ExtResource("14_jkdf5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.21748, 0.22470856, -64.96053)
-max_minutes = 5.0
-
 [node name="CanvasLayer" parent="." unique_id=576219168 instance=ExtResource("15_wsu2k")]
+offset = Vector2(-39, 0)
+scale = Vector2(3.019916e-08, 0.4)
+transform = Transform2D(3.019916e-08, 0, 0, 0.4, -39, 0)
+
+[node name="Kaluza" parent="." unique_id=1833944500 instance=ExtResource("16_k12tt")]
+transform = Transform3D(7.340737, 0, 6.790698, 0, 9.68, 0, -6.790698, 0, 7.340737, 0, -9.66629, -8.942343)
+material_override = SubResource("StandardMaterial3D_b3802")
+
+[node name="Kaluza2" parent="." unique_id=1241485717 instance=ExtResource("16_k12tt")]
+transform = Transform3D(7.340737, 0, 6.790698, 0, 9.68, 0, -6.790698, 0, 7.340737, -51.283966, -9.666294, -9.590147)
+material_override = SubResource("StandardMaterial3D_b3802")
+
+[node name="Kaluza3" parent="." unique_id=1412224571 instance=ExtResource("16_k12tt")]
+transform = Transform3D(7.340737, 0, 6.790698, 0, 9.68, 0, -6.790698, 0, 7.340737, -21.32367, -9.66629, -40.258324)
+material_override = SubResource("StandardMaterial3D_b3802")
+
+[node name="Kaluza4" parent="." unique_id=1881059794 instance=ExtResource("16_k12tt")]
+transform = Transform3D(7.340737, 0, 6.790698, 0, 9.68, 0, -6.790698, 0, 7.340737, 12.064325, -9.666294, 34.545116)
+material_override = SubResource("StandardMaterial3D_b3802")
+
+[node name="Kaluza5" parent="." unique_id=1495082268 instance=ExtResource("16_k12tt")]
+transform = Transform3D(7.340737, 0, 6.790698, 0, 9.68, 0, -6.790698, 0, 7.340737, -65.66579, -9.66629, -63.993103)
+material_override = SubResource("StandardMaterial3D_b3802")
+
+[node name="Kaluza6" parent="." unique_id=257598307 instance=ExtResource("16_k12tt")]
+transform = Transform3D(7.340737, 0, 6.790698, 0, 9.68, 0, -6.790698, 0, 7.340737, 32.583855, -9.66629, -63.795876)
+material_override = SubResource("StandardMaterial3D_b3802")
+
+[node name="Kaluza7" parent="." unique_id=1043994131 instance=ExtResource("16_k12tt")]
+transform = Transform3D(7.340737, 0, 6.790698, 0, 9.68, 0, -6.790698, 0, 7.340737, 33.60346, -9.66629, -9.161355)
+material_override = SubResource("StandardMaterial3D_b3802")
